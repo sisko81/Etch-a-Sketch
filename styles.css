@@ -9,13 +9,13 @@ main{
 #title{
     position: absolute;
     font-size: 45px;
-    top: 1.5rem;
+    top: 2.5rem;
     z-index: 100;
 }
 
 #container{
+    height: 400px;
+    width: 400px;
     display: grid;
-    width: 450px;
-    height: 450px;
     grid-gap: 1px;
 }
