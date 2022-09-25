@@ -12,4 +12,4 @@ const grid = (size) => {
     }
 }
 
-grid(7)
+grid(16)
