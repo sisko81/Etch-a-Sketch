@@ -3,7 +3,7 @@ const grid = (size) => {
     container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
     container.style.gridTemplateRows = `repeat(${size}, 1fr)`;
 
-    let = playArea = size * size;
+    let playArea = size * size;
     for(let i = 0; i < playArea; i++) {
         const square = document.createElement('div');
         square.id = ('box');
