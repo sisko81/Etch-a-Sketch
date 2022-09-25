@@ -1,7 +1,10 @@
+
+
 const grid = (size) => {
     const container = document.querySelector('#container');
     container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
     container.style.gridTemplateRows = `repeat(${size}, 1fr)`;
+    
 
     let playArea = size * size;
     for(let i = 0; i < playArea; i++) {
@@ -9,7 +12,19 @@ const grid = (size) => {
         square.id = ('box');
         square.style.backgroundColor = 'blue';
         container.appendChild(square)
+
+        square.addEventListener('click', () => {
+            square.style.backgroundColor = 'black';
+            
+
+        })
     }
+
+    // Set up an hover effect
+    
 }
 
-grid(16)
+grid(16);
+
+
+
