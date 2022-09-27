@@ -1,4 +1,4 @@
-
+let color = 'black'
 
 const grid = (size) => {
     const container = document.querySelector('#container');
@@ -10,21 +10,22 @@ const grid = (size) => {
     for(let i = 0; i < playArea; i++) {
         const square = document.createElement('div');
         square.id = ('box');
-        square.style.backgroundColor = 'blue';
+        square.style.backgroundColor = 'white';
         container.appendChild(square)
-
-        square.addEventListener('click', () => {
-            square.style.backgroundColor = 'black';
-            
-
-        })
+        
+        square.addEventListener('mouseover', blackColor)
+        
     }
-
-    // Set up an hover effect
     
 }
 
 grid(16);
 
 
+function blackColor() {
+    this.style.backgroundColor = color
+}
 
+function greyColor(choice) {
+    
+}    
