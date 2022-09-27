@@ -20,21 +20,21 @@ main{
 }
 
 #container{
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     display: grid;
     
 }
 
 .btn-container{
     display: flex;
-    justify-content: space-evenly;
-    width: 400px;
+    justify-content: space-between;
+    width: 500px;
 }
 
 #btn-black{
     margin-top: 1.5rem;
-    padding: 8px 25px;
+    padding: 8px 30px;
     border-radius: 8px;
     font-size: 16px;
     color: white;
@@ -43,9 +43,27 @@ main{
 
 #btn-grey{
     margin-top: 1.5rem;
-    padding: 8px 25px;
+    padding: 8px 30px;
     border-radius: 8px;
     font-size: 16px;
     color: white;
     background-color: grey;
+}
+
+#btn-eraser{
+    margin-top: 1.5rem;
+    padding: 8px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+}
+
+#btn-random{
+    margin-top: 1.5rem;
+    padding: 8px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: blue;
+    background-color: pink;
 }

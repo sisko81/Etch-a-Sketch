@@ -1,4 +1,4 @@
-let color = 'black'
+let defaultColor = 'black'
 
 const grid = (size) => {
     const container = document.querySelector('#container');
@@ -13,7 +13,8 @@ const grid = (size) => {
         square.style.backgroundColor = 'white';
         container.appendChild(square)
         
-        square.addEventListener('mouseover', blackColor)
+        square.addEventListener('mouseover', getDefaultColor);
+        
         
     }
     
@@ -22,10 +23,10 @@ const grid = (size) => {
 grid(16);
 
 
-function blackColor() {
+function getDefaultColor() {
     this.style.backgroundColor = color
 }
 
-function greyColor(choice) {
-    
+function addColor(choice) {
+    color = choice
 }    
