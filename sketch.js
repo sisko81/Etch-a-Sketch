@@ -1,4 +1,5 @@
 let defaultColor = 'black'
+let click = true
 
 const grid = (size) => {
     const container = document.querySelector('#container');
@@ -32,11 +33,13 @@ function getSize(input) {
 }
 
 function getDefaultColor() {
-    if((color == 'random')) {
-        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`
-    }
-    else {
-        this.style.backgroundColor = color
+    if(click) {
+        if((color == 'random')) {
+            this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`
+        }
+        else {
+            this.style.backgroundColor = color
+        }
     }
 }
 
@@ -51,4 +54,6 @@ function reset() {
   squares.forEach(div => div.style.backgroundColor = 'white')
 }
 
-
+document.querySelector('body').addEventListener('click', () => {
+    click = !click
+} )
