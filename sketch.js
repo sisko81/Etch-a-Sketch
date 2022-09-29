@@ -44,4 +44,11 @@ function addColor(choice) {
     color = choice
 }    
 
+function reset() {
+
+  
+  const squares = container.querySelectorAll('div');
+  squares.forEach(div => div.style.backgroundColor = 'white')
+}
+
 

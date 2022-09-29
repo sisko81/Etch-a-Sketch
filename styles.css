@@ -42,7 +42,7 @@ main{
 }
 
 #box{
-    border: 1px solid black;
+    
 }
 
 #btn-black{
@@ -54,13 +54,13 @@ main{
     background-color: black;
 }
 
-#btn-grey{
+#btn-reset{
     margin-top: 1.5rem;
     padding: 8px 25px;
     border-radius: 8px;
     font-size: 14px;
     color: white;
-    background-color: grey;
+    background-color: green;
 }
 
 #btn-eraser{
