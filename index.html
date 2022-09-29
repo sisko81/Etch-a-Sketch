@@ -12,6 +12,10 @@
     <main>
         <h1 id="title">ETCH-A-SKETCH</h1>
 
+        <div>
+           <input type="text" placeholder="Size of grid" value="16" onchange="getSize(this.value)">
+           <button>Set Size</button>
+        </div>
         <div id="container"></div>
 
 
@@ -22,7 +26,7 @@
             <button onclick="addColor('white')" id="btn-eraser">Eraser</button>
 
         </div>
-        
+
     </main>
 
     <script src="sketch.js"></script>

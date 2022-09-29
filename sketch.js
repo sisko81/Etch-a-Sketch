@@ -5,6 +5,9 @@ const grid = (size) => {
     container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
     container.style.gridTemplateRows = `repeat(${size}, 1fr)`;
     
+    const squares = container.querySelectorAll('div');
+    squares.forEach(div => div.remove())
+    
 
     let playArea = size * size;
     for(let i = 0; i < playArea; i++) {
@@ -16,6 +19,7 @@ const grid = (size) => {
         square.addEventListener('mouseover', getDefaultColor);
         
         
+        
     }
     
 }
@@ -23,10 +27,21 @@ const grid = (size) => {
 grid(16);
 
 
+function getSize(input) {
+    grid(input)
+}
+
 function getDefaultColor() {
-    this.style.backgroundColor = color
+    if((color == 'random')) {
+        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`
+    }
+    else {
+        this.style.backgroundColor = color
+    }
 }
 
 function addColor(choice) {
     color = choice
 }    
+
+
