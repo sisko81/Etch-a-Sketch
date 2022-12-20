@@ -53,6 +53,15 @@ main{
     background-color: black;
 }
 
+#btn-grey{
+    margin-top: 1.5rem;
+    padding: 8px 25px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: white;
+    background-color: grey;
+}
+
 #btn-reset{
     margin-top: 1.5rem;
     padding: 8px 25px;
@@ -89,4 +98,11 @@ section{
     
     height: 20px;
     margin-top: 4rem;
+}
+
+
+
+button,
+input[type='color']{
+
 }
