@@ -3,9 +3,7 @@
     margin: 0;
 }
 
-body{
-    background: linear-gradient(110deg, #e2e1ff, 60%, #dedee121 60%);
-}
+
 
 main{
     display: flex;
@@ -102,7 +100,3 @@ section{
 
 
 
-button,
-input[type='color']{
-
-}

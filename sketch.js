@@ -1,4 +1,4 @@
-let defaultColor = 'black'
+let color = 'black'
 let click = true
 
 const grid = (size) => {
@@ -18,11 +18,7 @@ const grid = (size) => {
         container.appendChild(square)
         
         square.addEventListener('mouseover', getDefaultColor);
-        
-        
-        
     }
-    
 }
 
 grid(16);
@@ -34,7 +30,7 @@ function getSize(input) {
 
 function getDefaultColor() {
     if(click) {
-        if((color == 'random')) {
+        if((color === 'random')) {
             this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`
         }
         else {
@@ -47,9 +43,9 @@ function addColor(choice) {
     color = choice
 }    
 
-function reset() {
 
-  
+
+function reset() {
   const squares = container.querySelectorAll('div');
   squares.forEach(div => div.style.backgroundColor = 'white')
 }
